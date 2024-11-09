@@ -197,7 +197,7 @@ img {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(135deg, #457b9d, #e63946, #f1faee);
+  background-image: linear-gradient(180deg, #000000 1%, #457b9d 30%, #e63946 75%, #000);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-text-primary);
@@ -298,7 +298,10 @@ img {
   grid-template-rows: auto 1fr;
   grid-template-columns: auto 1fr;
   overflow: hidden;
+  max-width: 1000px;
   height: 100%;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid #414549;
   border-radius: 10px;
   background-color: var(--color-bg-primary);
