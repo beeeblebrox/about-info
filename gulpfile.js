@@ -9,7 +9,6 @@ import styles from './tasks/styles.js'
 import images from './tasks/images.js'
 import sprite from './tasks/sprite.js'
 import htmlIncludes from './tasks/html.js'
-// import deploy from './tasks/deploy.js'
 import ghDeploy from './tasks/ghDeploy.js'
 
 import browserSync from 'browser-sync'
