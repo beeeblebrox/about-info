@@ -1,0 +1,20 @@
+/* explorer */
+
+.explorer {
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.explorer__header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.explorer__header-title {
+  overflow: hidden;
+  font-size: calc(var(--text-size-main) - 2px);
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,33 @@
+/* app-wrapper */
+
+.app-wrapper {
+  height: 100dvh;
+  padding: 10vh;
+}
+
+@media (width <= 768px) {
+  .app-wrapper {
+    padding: 5vh;
+  }
+}
+
+/* app */
+
+.app {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #414549;
+  border-radius: 10px;
+  background-color: var(--color-bg-primary);
+}
+
+.app > * {
+  min-width: 0;
+}
+

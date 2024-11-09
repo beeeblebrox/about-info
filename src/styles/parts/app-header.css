@@ -1,0 +1,15 @@
+/* app-header */
+
+.app-header {
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+}
+
+.app-header__title {
+  font-size: var(--text-size-main);
+}

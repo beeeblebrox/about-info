@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <meta name="description" content="Главная">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:image" content="images/preview.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="images/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="images/favicons/manifest.webmanifest">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="page__body">
+
+  <div class="app-wrapper">
+    <div class="app">
+      <header class="app-header">
+        <div class="app-header__left"></div>
+
+        <div class="app-header__center">
+          <h2 class="app-header__title">about.md – resume-app</h2>
+        </div>
+
+        <div class="app-header__right"></div>
+      </header>
+
+      <aside class="app-sidebar">
+        <div class="app-sidebar__tools">
+          <button class="app-sidebar__button icon-button is-active" type="button" aria-label="Explorer">
+            <svg class="icon-button__icon" width="24" height="24" aria-hidden="true">
+              <use href="images/sprite.svg#files"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="app-sidebar__tools">
+          <a class="app-sidebar__button icon-button" href="https://github.com/beeeblebrox" aria-label="I'm on Github" rel="noopener noreferrer nofollow" target="_blank">
+            <svg class="icon-button__icon" width="24" height="24" aria-hidden="true">
+              <use href="images/sprite.svg#account"></use>
+            </svg>
+          </a>
+
+          <!-- <button class="app-sidebar__button icon-button" type="button" aria-label="Settings">
+          <svg class="icon-button__icon" width="24" height="24" aria-hidden="true">
+            <use href="images/sprite.svg#settings"></use>
+          </svg>
+        </button> -->
+        </div>
+      </aside>
+
+      <main class="app-content">
+        <section class="app-content__explorer explorer">
+          <header class="explorer__header">
+            <h2 class="explorer__header-title">Explorer: resume-app</h2>
+          </header>
+
+          <nav class="explorer__menu explorer-menu">
+            <ul class="explorer-menu__list">
+              <!-- <li class="explorer-menu__item">
+              <a class="explorer-menu__link" href="#">
+                <svg class="explorer-menu__link-icon" width="15" height="15" aria-hidden="true">
+                  <use href="images/sprite.svg#fileCode"></use>
+                </svg>
+
+                <span class="explorer-menu__link-text">index.md</span>
+              </a>
+            </li> -->
+
+              <li class="explorer-menu__item is-active">
+                <a class="explorer-menu__link" href="/">
+                  <svg class="explorer-menu__link-icon" width="15" height="15" aria-hidden="true">
+                    <use href="images/sprite.svg#fileCode"></use>
+                  </svg>
+
+                  <span class="explorer-menu__link-text">about.md</span>
+                </a>
+              </li>
+
+              <!-- <li class="explorer-menu__item">
+              <a class="explorer-menu__link" href="#">
+                <svg class="explorer-menu__link-icon" width="15" height="15" aria-hidden="true">
+                  <use href="images/sprite.svg#fileCode"></use>
+                </svg>
+
+                <span class="explorer-menu__link-text">portfolio.md</span>
+              </a>
+            </li>
+
+            <li class="explorer-menu__item">
+              <a class="explorer-menu__link" href="#">
+                <svg class="explorer-menu__link-icon" width="15" height="15" aria-hidden="true">
+                  <use href="images/sprite.svg#fileCode"></use>
+                </svg>
+
+                <span class="explorer-menu__link-text">contacts.md</span>
+              </a>
+            </li> -->
+            </ul>
+          </nav>
+        </section>
+
+        <div class="app-content__editor editor">
+          <div class="editor__header">
+            <div class="editor__tabs"></div>
+
+            <!-- <div class="editor__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">home</a>
+              </li>
+
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">about.md</a>
+              </li>
+            </ul>
+          </div> -->
+          </div>
+
+          <div class="editor__content">
+            <article class="entry-content">
+              <h1 class="visually-hidden">About me</h1>
+
+              <h2 class="h1">Hi 👋, I'm Alexander</h2>
+
+              <p>... and I'm a frontend developer. My main specialities are HTML and CSS. Almost every day, I help my clients to create websites and solve their business tasks.</p>
+
+              <p>I am currently a freelancer with 5 years of experience, but I am eager to find my dream job in an interesting company 🥰</p>
+
+              <ul>
+                <li>🌱 I’m currently learning JavaScript and React</li>
+                <li>💬 Ask me about HTML, CSS</li>
+                <li>📫 How to reach me: <a href="https://github.com/beeeblebrox" rel="noopener noreferrer nofollow" target="_blank">GitHub</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

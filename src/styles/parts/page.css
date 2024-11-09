@@ -1,0 +1,27 @@
+/* Page */
+
+.page {
+  scroll-behavior: smooth;
+}
+
+.page,
+.page__body {
+  height: 100%;
+}
+
+.page__body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(135deg, #457b9d, #e63946, #f1faee);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-main);
+  font-family: var(--text-font-main);
+  line-height: var(--text-line-height-main);
+  text-rendering: optimizespeed;
+}

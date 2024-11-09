@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /
+
+#User-agent: *
+#Allow: /images/
+#Disallow: /styles/
+#Disallow: /fonts/
+#Disallow: /scripts/
+#Disallow: /sass/
+#Disallow: /libs/
+#Disallow: /cgi-bin/
+
+#User-agent: Googlebot
+#Allow: /
+#Disallow: /cgi-bin/
+
+#User-agent: Yandex
+#Allow: /images/
+#Allow: /styles/
+#Disallow: /fonts/
+#Disallow: /scripts/
+#Disallow: /sass/
+#Disallow: /libs/
+#Disallow: /cgi-bin/
+
+#Host: sitename.ru
+#Sitemap: http://sitename.ru/sitemap.xml

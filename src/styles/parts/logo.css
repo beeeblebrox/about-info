@@ -1,0 +1,12 @@
+/* logo */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

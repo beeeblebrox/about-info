@@ -1,0 +1,41 @@
+/* explorer-menu */
+
+.explorer-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.explorer-menu__link {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 4px 15px;
+  color: inherit;
+  font-size: calc(var(--text-size-main) - 2px);
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.explorer-menu__link:hover {
+  background-color: var(--color-bg-primary);
+}
+
+.explorer-menu__item.is-active .explorer-menu__link {
+  background-color: #3a414a;
+}
+
+.explorer-menu__link-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.explorer-menu__link-icon {
+  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
+  fill: currentColor;
+}
