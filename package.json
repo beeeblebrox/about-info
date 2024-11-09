@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "dev": "gulp",
+    "build": "gulp build",
     "lint:html": "linthtml dist/*.html --config .linthtmlrc"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "gulp": "^5.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^9.0.0",
     "gulp-postcss": "^10.0.0",

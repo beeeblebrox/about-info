@@ -10,6 +10,7 @@ import images from './tasks/images.js'
 import sprite from './tasks/sprite.js'
 import htmlIncludes from './tasks/html.js'
 import deploy from './tasks/deploy.js'
+import build from './tasks/build.js'
 
 import browserSync from 'browser-sync'
 import devip from 'dev-ip'
@@ -50,7 +51,7 @@ function startWatch() {
 
 /* Exports */
 
-export { htmlIncludes, styles, images, sprite, deploy }
+export { htmlIncludes, styles, images, sprite, deploy, build }
 
 export default series(
   parallel(htmlIncludes, styles),
