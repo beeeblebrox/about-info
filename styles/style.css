@@ -354,7 +354,7 @@ img {
 }
 /* app-content__explorer */
 .app-content__explorer {
-  flex: 1 0 15vw;
+  flex: 0 0 15%;
   min-width: 150px
 }
 @media (width <= 768px) {
