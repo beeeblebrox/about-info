@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build",
+    "deploy": "gulp deploy",
     "lint:html": "linthtml dist/*.html --config .linthtmlrc"
   },
   "devDependencies": {

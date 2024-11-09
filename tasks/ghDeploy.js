@@ -4,9 +4,9 @@ import paths from './paths.js'
 
 const { gulp, series, parallel, src, dest, watch } = pkg
 
-const build = () => {
+const ghDeploy = () => {
   return src(`${paths.dist}/**/*`)
     .pipe(ghPages());
 }
 
-export default build
+export default ghDeploy

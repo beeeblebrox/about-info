@@ -9,8 +9,8 @@ import styles from './tasks/styles.js'
 import images from './tasks/images.js'
 import sprite from './tasks/sprite.js'
 import htmlIncludes from './tasks/html.js'
-import deploy from './tasks/deploy.js'
-import build from './tasks/build.js'
+// import deploy from './tasks/deploy.js'
+import ghDeploy from './tasks/ghDeploy.js'
 
 import browserSync from 'browser-sync'
 import devip from 'dev-ip'
@@ -51,7 +51,9 @@ function startWatch() {
 
 /* Exports */
 
-export { htmlIncludes, styles, images, sprite, deploy, build }
+export { htmlIncludes, styles, images, sprite, ghDeploy }
+
+export const deploy = series(parallel(htmlIncludes, styles), images, sprite, ghDeploy)
 
 export default series(
   parallel(htmlIncludes, styles),
