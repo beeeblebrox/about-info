@@ -5,7 +5,7 @@ import paths from './paths.js'
 const { gulp, series, parallel, src, dest, watch } = pkg
 
 const build = () => {
-  return src(`${paths.dist}`)
+  return src(`${paths.dist}/**/*`)
     .pipe(ghPages());
 }
 
