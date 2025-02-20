@@ -39,3 +39,9 @@
   height: auto;
   fill: currentColor;
 }
+
+@media (prefers-color-scheme: light) {
+  .explorer-menu__item.is-active .explorer-menu__link {
+    background-color: #e8eaed;
+  }
+}

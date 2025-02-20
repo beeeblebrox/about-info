@@ -61,16 +61,30 @@ img {
   --color-bg-secondary: #1f2428;
   --color-text-accent: #0366d6;
   --color-text-accent-2: #fa826c;
-  --color-text-primary: #fff;
+  --color-text-primary: #fafafa;
   --color-text-inert: #a1a2a3;
   --color-border: #1f2428;
 
   /* text */
   --text-font-main: 'Open Sans', sans-serif;
   --text-font-accent: serif;
-  --text-size-main: 14px;
+  --text-size-main: 15px;
   --text-line-height-main: 1.3;
   --text-line-height-title: 1.2;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    /* colors */
+    --color-bg-accent: #0366d6;
+    --color-bg-accent-2: #fa826c;
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #f6f8fa;
+    --color-text-accent: #0366d6;
+    --color-text-accent-2: #fa826c;
+    --color-text-primary: #3c434a;
+    --color-text-inert: #959ea5;
+    --color-border: #e2e4e8;
+  }
 }
 /* visually-hidden */
 .visually-hidden {
@@ -197,7 +211,17 @@ img {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(180deg, #000000 1%, #457b9d 30%, #e63946 75%, #000);
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #1a1a1a,
+    #2c3e50,
+    #8e44ad,
+    #c0392b,
+    #2c3e50,
+    #1a1a1a,
+    #000000
+  );
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-text-primary);
@@ -205,6 +229,21 @@ img {
   font-family: var(--text-font-main);
   line-height: var(--text-line-height-main);
   text-rendering: optimizespeed;
+}
+@media (prefers-color-scheme: light) {
+  .page__body {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #e0e0e0,
+      #81ecec,
+      #f78fb3,
+      #f8a5c2,
+      #ffeaa7,
+      #e0e0e0,
+      #ffffff
+    );
+  }
 }
 /* button */
 .button {
@@ -308,6 +347,11 @@ img {
 }
 .app > * {
   min-width: 0;
+}
+@media (prefers-color-scheme: light) {
+  .app {
+    border-color: #e2e4e8;
+  }
 }
 /* app-header */
 .app-header {
@@ -417,6 +461,11 @@ img {
   height: auto;
   fill: currentColor;
 }
+@media (prefers-color-scheme: light) {
+  .explorer-menu__item.is-active .explorer-menu__link {
+    background-color: #e8eaed;
+  }
+}
 /* editor */
 .editor {
   position: relative;
@@ -433,7 +482,7 @@ img {
 .editor__content {
   overflow-y: auto;
   height: 100%;
-  padding: 2px 15px;
+  padding: 13px 15px;
 }
 /* breadcrumbs */
 .breadcrumbs {
